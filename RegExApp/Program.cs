@@ -64,5 +64,11 @@ namespace RegExApp
             }
             return "No match found";
         }
+
+        public static bool TestPassword(string? input)
+        {
+            return Regex.IsMatch(input!, @"^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?\d)(?=.*?[@$!%*?&])^.{8,}$");
+         
+        }
     }
 }

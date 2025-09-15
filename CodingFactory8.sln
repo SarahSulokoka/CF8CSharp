@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrBuilderApp", "StrBuilder
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegExApp", "RegExApp\RegExApp.csproj", "{15EFD92F-C415-4A2E-85BA-C5B497C15607}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsApp", "MethodsApp\MethodsApp.csproj", "{FA8C70D8-52AE-4320-87CD-33F3F984A7AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,10 @@ Global
 		{15EFD92F-C415-4A2E-85BA-C5B497C15607}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15EFD92F-C415-4A2E-85BA-C5B497C15607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15EFD92F-C415-4A2E-85BA-C5B497C15607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8C70D8-52AE-4320-87CD-33F3F984A7AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8C70D8-52AE-4320-87CD-33F3F984A7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8C70D8-52AE-4320-87CD-33F3F984A7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8C70D8-52AE-4320-87CD-33F3F984A7AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
