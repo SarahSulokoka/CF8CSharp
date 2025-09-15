@@ -8,5 +8,18 @@ namespace StudentApp
 {
     internal class HelloUtil
     {
+        private HelloUtil()
+        {
+        } // Private constructor to prevent instantiation
+
+        public static void SayHello()
+        {
+            Console.WriteLine("Hello from CF8!");
+
+
+        }
     }
 }
+
+
+

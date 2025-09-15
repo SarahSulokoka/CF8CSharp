@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace StudentApp
 {
-    internal class SchoolType
+    internal enum SchoolType
     {
+        IEK,    //0
+        KEK,    //1
+        EPAS    //2
     }
 }

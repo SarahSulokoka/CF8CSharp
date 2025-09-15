@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace AccountApp.Exceptions
 {
-    internal class InsufficientAmountException
+    internal class InsufficientAmountException : Exception 
     {
+        public InsufficientAmountException() : base("Insufficient amount in account.")
+        {
+        }
+        public InsufficientAmountException(string message) : base(message)
+        {
+        }
+        public InsufficientAmountException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+         
     }
 }
