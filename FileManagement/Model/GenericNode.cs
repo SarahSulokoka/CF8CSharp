@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileManagement.Model
 {
-    internal class GenericNode
+    internal class GenericNode<T>
     {
+        public T? Value { get; set; }
+        public int Count { get; set; }
+        public GenericNode<T>? Next { get; set; }
+        public GenericNode<T>? Prev { get; set; }
     }
 }
