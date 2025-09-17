@@ -95,8 +95,20 @@ namespace CollectionsApp
 
 
             List<Product> products = new() {  new Product() {Description = "Milkd", Price = 20, Stock = 20},
-                                            new Product() {Description = "Bread", Price = 10, Stock = 30},
-                                            new Product() {Description = "Eggs", Price = 5, Stock = 50} };
+                                              new Product() {Description = "Bread", Price = 10, Stock = 30},
+                                              new Product() {Description = "Eggs", Price = 5, Stock = 50} };
+                                              new.Product() { Description = "Butter", Price = 15, Stock = 10 };
+            products.Sort(); //uses CompareTo method of Product class
+
+            products.ForEach(Console.WriteLine);
+
+            products.Sort((p1, p2) => p1.Price.CompareTo(p2.Price));
+            products.ForEach(Console.WriteLine);
+
+            products.Sort((p1, p2) => p2.Stock.CompareTo(p1.Stock));
+
+            products.Sort((p1, p2) => p1.Stock - p2.Stock); //ascending
+
 
         }
     }

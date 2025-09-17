@@ -22,7 +22,7 @@ namespace CollectionsApp.Model
 
         public override string? ToString()
         {
-            return base.ToString();
+            return $"{Description} : {Price} : {Stock}";
         }
 
         public bool Equals(Product? other)    // better performance, contains uses it . also in Dictionary
