@@ -17,7 +17,12 @@ namespace CollectionsApp.Model
 
         public int CompareTo(Product? other)
         {
-            throw new NotImplementedException();
+            return Description.CompareTo(other!.Description);
+        }
+
+        public override string? ToString()
+        {
+            return base.ToString();
         }
 
         public bool Equals(Product? other)    // better performance, contains uses it . also in Dictionary

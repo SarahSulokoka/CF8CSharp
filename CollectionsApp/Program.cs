@@ -1,4 +1,6 @@
-﻿namespace CollectionsApp
+﻿using CollectionsApp.Model;
+
+namespace CollectionsApp
 {
     internal class Program
     {
@@ -72,6 +74,30 @@
             {
                 Console.WriteLine(car);
             }
+
+
+            //set
+
+            var s1 = new SortedSet<string>() {"Coding", " Factory " , " AUEB"};
+            var s2 = new HashSet<string>() { " Coding", "Hello", " World" };
+            
+
+            s1.Add("Hello");
+            s2.Add("World"); //no duplicates
+
+            s1.ExceptWith(s2); //s1 - s2
+            s1.UnionWith(s2); //s1 U s2
+
+            foreach (string word in s1)
+            {
+                Console.WriteLine(word + " ");
+            }
+
+
+            List<Product> products = new() {  new Product() {Description = "Milkd", Price = 20, Stock = 20},
+                                            new Product() {Description = "Bread", Price = 10, Stock = 30},
+                                            new Product() {Description = "Eggs", Price = 5, Stock = 50} };
+
         }
     }
 }
