@@ -34,6 +34,44 @@
             {
                 Console.WriteLine(str + " ");
             }
+
+            //Dictionary
+            var words = new Dictionary<int, string>();
+            words.Add(1, "Hello");
+            words[2] = "AUEB";
+            words[3] = "Coding";
+            words.Remove(2);
+
+            foreach (var kvp in words)
+            {
+                Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
+            }
+
+
+            var stack = new Stack<string>();
+            stack.Push("AB8273");
+            stack.Push("AB6473");
+            stack.Push("AB1234");   
+
+
+            var lastCar = stack.Pop();
+
+            foreach (var car in stack)
+            {
+                Console.WriteLine(car);
+            }
+
+            var queue = new Queue<string>();
+            queue.Enqueue("AB8273");
+            queue.Enqueue("AB6473");
+            queue.Enqueue("AB1234");
+
+            var firstCar = queue.Dequeue();
+
+            foreach (var car in queue)
+            {
+                Console.WriteLine(car);
+            }
         }
     }
 }
