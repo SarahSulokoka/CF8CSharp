@@ -8,6 +8,7 @@ namespace PointApp.Model
 {
     internal class Point
     {
+
         public int X { get; set; }
 
         public override string? ToString()
@@ -15,17 +16,9 @@ namespace PointApp.Model
             return $"{X}";
         }
 
-        public void Move5()
+        public virtual void Move5()
         {
             X += 5;
-        }
-
-    
-
-        public override void Move5()
-        {
-            base.Move5(); // Call the base class method to move X by 5
-            Y += 5;
         }
     }
 }

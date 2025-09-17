@@ -4,9 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractClassApp
+namespace AbstractClassesApp
 {
-    internal class Cat
+    internal class Cat : AbstractAnimal
     {
+        public override void Speak()
+        {
+            Console.WriteLine("Cat says hello.");
+        }
+
+        public override string ToString()
+        {
+            return $"Id: {Id}, Name: {Name}, Age: {Age}";
+        }
     }
 }

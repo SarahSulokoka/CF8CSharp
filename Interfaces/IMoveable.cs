@@ -4,9 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interfaces
+namespace InterfacesApp
 {
-    internal interface Imoveable
+    internal interface IMoveable
     {
+        void Move5();
+
+        // Default Impl
+        void Move10()
+        {
+            Console.WriteLine("Move 10 units");
+        }
     }
 }
